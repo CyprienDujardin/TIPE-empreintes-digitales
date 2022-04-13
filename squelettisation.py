@@ -145,3 +145,28 @@ def squelette(tableauImage):
 def finalcountdown():
     tabl=creeTableauImage(imageEmpreinte)
     return squelette(tabl)
+
+def CN():
+    tabl=finalcountdown()
+
+    p=tabl.shape[0]
+    k=tabl.shape[1]
+    L=[0,0,0,0,0]  
+    for i in range (0,p-1):
+        for j in range (0,k-1):          #Parcours l'image te effectue le calcul de crossing number pour compter le nombre de minuties
+            P=[int(tabl[i-1][j][0]),int(tabl[i-1][j-1][0]),int(tabl[i-1][j+1][0]),int(tabl[i][j-1][0]),int(tabl[i][j+1][0]),int(tabl[i+1][j][0]),int(tabl[i+1][j-1][0]),int(tabl[i+1][j+1][0]),int(tabl[i-1][j][0])]
+            cn=0
+            for u in range(8):
+                cn = cn + 0.5*np.abs(P[u]-P[u+1])
+            
+            if cn==0: 
+                L[0]=L[0]+1             #erreur -> point isolé
+            elif cn == 1:
+                L[1]=L[1]+1             #terminaison
+            elif cn == 2:
+                L[2]=L[2]+1             #erreur --> point sillon
+            elif cn == 3:
+                L[3]=L[3]+1             #divergence ou bifurcation
+            elif cn == 4:
+                L[4]=L[4]+1             #erreur -> minutie à 4 branches
+    return L
