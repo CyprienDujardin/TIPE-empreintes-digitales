@@ -4,8 +4,13 @@ Ce projet regroupe une série de programmes conçus pour l'authentification des 
 
 Vous trouverez ici divers algorithmes évalués pour leur viabilité et fiabilité :
 
-Une fonction isolant les contours des formes d'une image.
-Une fonction de hachage perceptuel.
-Deux fonctions de squelettisation.
-Une fonction de repérage de minuties.
+-Une fonction isolant les contours des formes d'une image.
+
+-Une fonction de hachage perceptuel.
+
+-Deux fonctions de squelettisation.
+
+-Une fonction de repérage de minuties.
+
+
 Pour plus de détails, consultez le document MCOT.pdf.
