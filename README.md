@@ -1,8 +1,11 @@
 # TIPE-empreintes-digitales
 
-Ensemble de programmes permettant de conclure quant à l'authentification d'empreintes digitales.
-Le dossier est constitué de plusieurs algorithmes ayant été créés dans le cadre de mon Travail d'Initiative Personnel de l'année 2020/2021. Le thème de l'année était Enjeux Sociétaux avec comme sous thème proposés Sécurité et Vie Privée. Dans ce cadre avec mon binôme nous nous sommes dirigés vers la reconnaissance d'empreintes digitales. Vous pouvez retrouver différents algorithmes ayant été testé afin d'évaluer leur viabilité et leur fiabilité. Respectivement, fonction isolant les contours des formes d'une image, une fonction de hachage perceptuel, deux fonctions de squelettisation et une fonction de repérage de minuties.
+Ce projet regroupe une série de programmes conçus pour l'authentification des empreintes digitales. Développé dans le cadre de mon Travail d'Initiative Personnel durant l'année 2020/2021, ce dossier comprend plusieurs algorithmes, élaborés autour du thème "Enjeux Sociétaux" et du sous-thème "Sécurité et Vie Privée". Avec mon binôme, nous avons exploré la reconnaissance des empreintes digitales.
 
+Vous trouverez ici divers algorithmes évalués pour leur viabilité et fiabilité :
 
-Pour plus d'informations, lire le document MCOT.pdf.
-
+Une fonction isolant les contours des formes d'une image.
+Une fonction de hachage perceptuel.
+Deux fonctions de squelettisation.
+Une fonction de repérage de minuties.
+Pour plus de détails, consultez le document MCOT.pdf.
